@@ -1,0 +1,7 @@
+services:
+  app:
+    image: "wish"
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    volumes:
+      - .:/code
