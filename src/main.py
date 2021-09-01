@@ -97,10 +97,9 @@ class Wish:
                 self.four_star_pity_counter = 0
                 self.five_star_pity_counter += 1
             else:
-                # Does 4 star pity counter reset if 5 star pity resets? 
-                # Assume that it doesn't 
+                # Does 4 star pity counter reset if 5 star pity resets? Assume that it doesn't.
                 self.five_star_pity_counter = 0
-                # Reset the soft-pity affected probability distribution for 3 star/4 star/5 star item rarities
+                # Reset the soft-pity affected probability distribution for 3/4/5 star item rarities
                 self.item_probabilities = copy.deepcopy(self.default_item_probabilities)
         self.print_summary_stats(roll_counts)
         return items
@@ -110,7 +109,7 @@ class Wish:
         print(self.get_roll_summary(roll_counts))
         print("==================================================")
         for item_rarity, probability in self.item_probabilities.items():
-            print("{}* item rate: {}".format(item_rarity, probability))
+            print("{} star item rate: {}".format(item_rarity, probability))
         print("==================================================")
         cumulative_rolls = sum(self.cumulative_roll_counts.values())
         print("cumulative rolls: {}".format(cumulative_rolls))
@@ -118,21 +117,11 @@ class Wish:
         print("4 star pity count: {}".format(self.four_star_pity_counter))
         print("5 star pity count: {}".format(self.five_star_pity_counter))
 
-    def cost_calculator(self, gems):
-        """
-        returns the least cost in USD based on the number of gems
-        """
-        usd_to_gem_conversion = {1: 60,
-                                 5: 300,
-                                 15: 980,
-                                 30: 1980,
-                                 50: 3280,
-                                 100: 6480}
-        [6480, 3280, 1980, 980, 300, 60]
-        return
-
     
 class StandardBanner(Wish):
+    """
+    Rolls for these wishes pull from Wanderlust Invocation banner item pool
+    """
     def __init__(self, **kwargs):
         self.weapons = item_pools.standard_weapons
         self.characters = item_pools.standard_characters
@@ -149,12 +138,25 @@ class StandardBanner(Wish):
     
 
 class WeaponBanner(Wish):
+    """
+    Rolls for these wishes pull from Weapon banner item pool. 
+    There are weapon-banner specific rules.
+    TODO: implement apply_pity to overwrite base class apply_pity for adjusted hard/soft pity thresholds
+    TODO: adjust item pool to match Weapon banner
+    TODO: implement Epitomized Path functionality
+    """
     def __init__(self, **kwargs):
         self.version = 2.1
         super().__init__(**kwargs)
 
 
 class CharacterBanner(Wish):
+    """
+    Rolls for these wishes pull from Character banner item pool. 
+    There are character-banner specific rules.
+    TODO: adjust item pool to match Character banner
+    TODO: implement 50/50 Rule
+    """
     def __init__(self, **kwargs):
         self.version = 2.1
         super().__init__(**kwargs)
