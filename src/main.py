@@ -62,23 +62,18 @@ class Wish:
         the outcome of which will be affected by soft and hard pity rules
 
         Soft pity rules:
-        Apply linear increase of probability from 5 star probability at roll number of soft pity threshold  
-        to 100% at roll number of hard pity threshold. When the 5 star probability increases, the 3 star 
+        Apply linear increase of probability from 5 star probability at roll number of five_star_soft_pity_threshold  
+        to 100% at roll number of five_star_hard_pity_threshold. When the 5 star probability increases, the 3 star 
         probability decreases by the same amount and the 4 star probaiblity stays the same. 
          
         Hard pity rules:
-        If there are no 5 star items returned after 89 rolls, the next roll is 5 star.
-        If there are no 4 star items returned after 9 rolls, 
+        If there are no 5 star items returned after rolls equal five_star_hard_pity_threshold, the next roll is 5 star.
+        If there are no 4 star items returned after rolls equal four_star_hard_pity_threshold, 
         the next roll is 4 star (if it doesn't happen to be 5 star).
         """
         soft_pity_step_size = (1 - self.default_item_probabilities[5])/(
             self.five_star_hard_pity_threshold - self.five_star_soft_pity_threshold)
         if self.five_star_pity_counter >= self.five_star_soft_pity_threshold:
-            # apply soft pity rules for 5 star:
-            # - linear increase of probability from base probability at roll number of soft pity threshold  
-            # to 100% at roll number of hard pity threshold 
-            # - subtract the probability of 3 star by the same step size
-            # - keep the 4 star probability the same
             self.item_probabilities[5] += soft_pity_step_size
             self.item_probabilities[3] -= soft_pity_step_size
         rarity = np.random.choice([3, 4, 5], size=1,
@@ -86,7 +81,6 @@ class Wish:
                 self.item_probabilities[4],
                 self.item_probabilities[5]])[0]
         if rarity < 4 and self.four_star_pity_counter >= self.four_star_hard_pity_threshold:
-            # hard pity for 4 star
             rarity = 4
         return rarity
     
