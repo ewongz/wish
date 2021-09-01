@@ -11,9 +11,13 @@ class Wish:
     def __init__(self, data_path="data"):
         """
         Simulates wishes in Genshin Impact
+        TODO: add cost calculator
         """
         self.four_star_pity_counter = 0
         self.five_star_pity_counter = 0
+        self.five_star_soft_pity_threshold = 74
+        self.five_star_hard_pity_threshold = 89
+        self.four_star_hard_pity_threshold = 9
         self.item_pool, self.item_data = self.load_data(data_path)
         self.cumulative_roll_counts = defaultdict(int)
         self.default_item_probabilities = {3: 0.943,
@@ -56,11 +60,23 @@ class Wish:
         """
         Returns integer value of 3, 4, or 5,
         the outcome of which will be affected by soft and hard pity rules
+
+        Soft pity rules:
+        Apply linear increase of probability from 5 star probability at roll number of soft pity threshold  
+        to 100% at roll number of hard pity threshold. When the 5 star probability increases, the 3 star 
+        probability decreases by the same amount and the 4 star probaiblity stays the same. 
+         
+        Hard pity rules:
+        If there are no 5 star items returned after 89 rolls, the next roll is 5 star.
+        If there are no 4 star items returned after 9 rolls, 
+        the next roll is 4 star (if it doesn't happen to be 5 star).
         """
-        soft_pity_step_size = (1 - 0.006)/(89 - 74)
-        if self.five_star_pity_counter >= 74:
-            # apply soft pity rules for 5 star
-            # - linear increase of probability from 0.06% at 74th roll to 100% at 89th roll 
+        soft_pity_step_size = (1 - self.default_item_probabilities[5])/(
+            self.five_star_hard_pity_threshold - self.five_star_soft_pity_threshold)
+        if self.five_star_pity_counter >= self.five_star_soft_pity_threshold:
+            # apply soft pity rules for 5 star:
+            # - linear increase of probability from base probability at roll number of soft pity threshold  
+            # to 100% at roll number of hard pity threshold 
             # - subtract the probability of 3 star by the same step size
             # - keep the 4 star probability the same
             self.item_probabilities[5] += soft_pity_step_size
@@ -69,7 +85,7 @@ class Wish:
             replace=True, p=[self.item_probabilities[3],
                 self.item_probabilities[4],
                 self.item_probabilities[5]])[0]
-        if rarity < 4 and self.four_star_pity_counter >= 9:
+        if rarity < 4 and self.four_star_pity_counter >= self.four_star_hard_pity_threshold:
             # hard pity for 4 star
             rarity = 4
         return rarity
