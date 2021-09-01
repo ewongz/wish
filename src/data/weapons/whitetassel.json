@@ -1,6 +1,6 @@
 {
 	"name": "White Tassel",
-	"description": "A standard-issue weapon of the Millelith soldiers. It has a sturdy shaft and sharp spearhead. It"s a reliable weapon.",
+	"description": "A standard-issue weapon of the Millelith soldiers. It has a sturdy shaft and sharp spearhead. It's a reliable weapon.",
 	"weapontype": "Polearm",
 	"rarity": "3",
 	"baseatk": 39,
@@ -35,11 +35,11 @@
 				"count": 2
 			},
 			{
-				"name": "Hunter"s Sacrificial Knife",
+				"name": "Hunter's Sacrificial Knife",
 				"count": 2
 			},
 			{
-				"name": "Recruit"s Insignia",
+				"name": "Recruit's Insignia",
 				"count": 1
 			}
 		],
@@ -53,11 +53,11 @@
 				"count": 2
 			},
 			{
-				"name": "Hunter"s Sacrificial Knife",
+				"name": "Hunter's Sacrificial Knife",
 				"count": 8
 			},
 			{
-				"name": "Recruit"s Insignia",
+				"name": "Recruit's Insignia",
 				"count": 5
 			}
 		],
@@ -71,11 +71,11 @@
 				"count": 4
 			},
 			{
-				"name": "Agent"s Sacrificial Knife",
+				"name": "Agent's Sacrificial Knife",
 				"count": 4
 			},
 			{
-				"name": "Sergeant"s Insignia",
+				"name": "Sergeant's Insignia",
 				"count": 4
 			}
 		],
@@ -89,11 +89,11 @@
 				"count": 2
 			},
 			{
-				"name": "Agent"s Sacrificial Knife",
+				"name": "Agent's Sacrificial Knife",
 				"count": 8
 			},
 			{
-				"name": "Sergeant"s Insignia",
+				"name": "Sergeant's Insignia",
 				"count": 6
 			}
 		],
@@ -107,11 +107,11 @@
 				"count": 4
 			},
 			{
-				"name": "Inspector"s Sacrificial Knife",
+				"name": "Inspector's Sacrificial Knife",
 				"count": 6
 			},
 			{
-				"name": "Lieutenant"s Insignia",
+				"name": "Lieutenant's Insignia",
 				"count": 4
 			}
 		],
@@ -125,11 +125,11 @@
 				"count": 3
 			},
 			{
-				"name": "Inspector"s Sacrificial Knife",
+				"name": "Inspector's Sacrificial Knife",
 				"count": 12
 			},
 			{
-				"name": "Lieutenant"s Insignia",
+				"name": "Lieutenant's Insignia",
 				"count": 8
 			}
 		]

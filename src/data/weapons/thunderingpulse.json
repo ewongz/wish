@@ -7,7 +7,7 @@
 	"substat": "CRIT DMG",
 	"subvalue": "14.4",
 	"effectname": "Rule by Thunder",
-	"effect": "Increases ATK by {0} and grants the might of the Thunder Emblem. At stack levels 1/2/3, the Thunder Emblem increases Normal Attack DMG by {1}. The character will obtain 1 stack of Thunder Emblem in each of the following scenarios: Normal Attack deals DMG (stack lasts 5s), casting Elemental Skill (stack lasts 10s); Energy is less than 100% (stack disappears when Energy is full). Each stack"s duration is calculated independently.",
+	"effect": "Increases ATK by {0} and grants the might of the Thunder Emblem. At stack levels 1/2/3, the Thunder Emblem increases Normal Attack DMG by {1}. The character will obtain 1 stack of Thunder Emblem in each of the following scenarios: Normal Attack deals DMG (stack lasts 5s), casting Elemental Skill (stack lasts 10s); Energy is less than 100% (stack disappears when Energy is full). Each stack's duration is calculated independently.",
 	"r1": [
 		"20%",
 		"12/24/40%"
@@ -36,7 +36,7 @@
 				"count": 10000
 			},
 			{
-				"name": "Narukami"s Wisdom",
+				"name": "Narukami's Wisdom",
 				"count": 5
 			},
 			{
@@ -54,7 +54,7 @@
 				"count": 20000
 			},
 			{
-				"name": "Narukami"s Joy",
+				"name": "Narukami's Joy",
 				"count": 5
 			},
 			{
@@ -72,7 +72,7 @@
 				"count": 30000
 			},
 			{
-				"name": "Narukami"s Joy",
+				"name": "Narukami's Joy",
 				"count": 9
 			},
 			{
@@ -90,7 +90,7 @@
 				"count": 45000
 			},
 			{
-				"name": "Narukami"s Affection",
+				"name": "Narukami's Affection",
 				"count": 5
 			},
 			{
@@ -108,7 +108,7 @@
 				"count": 55000
 			},
 			{
-				"name": "Narukami"s Affection",
+				"name": "Narukami's Affection",
 				"count": 9
 			},
 			{
@@ -126,7 +126,7 @@
 				"count": 65000
 			},
 			{
-				"name": "Narukami"s Valor",
+				"name": "Narukami's Valor",
 				"count": 6
 			},
 			{

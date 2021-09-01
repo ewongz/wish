@@ -1,6 +1,6 @@
 {
 	"name": "Deathmatch",
-	"description": "A sharp crimson polearm that was once a gladiator"s priceless treasure. Its awl has been stained by the blood of countless beasts and men.",
+	"description": "A sharp crimson polearm that was once a gladiator's priceless treasure. Its awl has been stained by the blood of countless beasts and men.",
 	"weapontype": "Polearm",
 	"rarity": "4",
 	"baseatk": 41,
@@ -41,7 +41,7 @@
 				"count": 5000
 			},
 			{
-				"name": "Boreal Wolf"s Milk Tooth",
+				"name": "Boreal Wolf's Milk Tooth",
 				"count": 3
 			},
 			{
@@ -59,7 +59,7 @@
 				"count": 15000
 			},
 			{
-				"name": "Boreal Wolf"s Cracked Tooth",
+				"name": "Boreal Wolf's Cracked Tooth",
 				"count": 3
 			},
 			{
@@ -77,7 +77,7 @@
 				"count": 20000
 			},
 			{
-				"name": "Boreal Wolf"s Cracked Tooth",
+				"name": "Boreal Wolf's Cracked Tooth",
 				"count": 6
 			},
 			{
@@ -95,7 +95,7 @@
 				"count": 30000
 			},
 			{
-				"name": "Boreal Wolf"s Broken Fang",
+				"name": "Boreal Wolf's Broken Fang",
 				"count": 3
 			},
 			{
@@ -113,7 +113,7 @@
 				"count": 35000
 			},
 			{
-				"name": "Boreal Wolf"s Broken Fang",
+				"name": "Boreal Wolf's Broken Fang",
 				"count": 6
 			},
 			{
@@ -131,7 +131,7 @@
 				"count": 45000
 			},
 			{
-				"name": "Boreal Wolf"s Nostalgia",
+				"name": "Boreal Wolf's Nostalgia",
 				"count": 4
 			},
 			{

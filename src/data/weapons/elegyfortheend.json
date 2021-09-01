@@ -1,6 +1,6 @@
 {
 	"name": "Elegy for the End",
-	"description": "A bow as lovely as any bard"s lyre, its arrows pierce the heart like a lamenting sigh.",
+	"description": "A bow as lovely as any bard's lyre, its arrows pierce the heart like a lamenting sigh.",
 	"weapontype": "Bow",
 	"rarity": "5",
 	"baseatk": 46,
@@ -41,7 +41,7 @@
 				"count": 10000
 			},
 			{
-				"name": "Boreal Wolf"s Milk Tooth",
+				"name": "Boreal Wolf's Milk Tooth",
 				"count": 5
 			},
 			{
@@ -49,7 +49,7 @@
 				"count": 5
 			},
 			{
-				"name": "Recruit"s Insignia",
+				"name": "Recruit's Insignia",
 				"count": 3
 			}
 		],
@@ -59,7 +59,7 @@
 				"count": 20000
 			},
 			{
-				"name": "Boreal Wolf"s Cracked Tooth",
+				"name": "Boreal Wolf's Cracked Tooth",
 				"count": 5
 			},
 			{
@@ -67,7 +67,7 @@
 				"count": 18
 			},
 			{
-				"name": "Recruit"s Insignia",
+				"name": "Recruit's Insignia",
 				"count": 12
 			}
 		],
@@ -77,7 +77,7 @@
 				"count": 30000
 			},
 			{
-				"name": "Boreal Wolf"s Cracked Tooth",
+				"name": "Boreal Wolf's Cracked Tooth",
 				"count": 9
 			},
 			{
@@ -85,7 +85,7 @@
 				"count": 9
 			},
 			{
-				"name": "Sergeant"s Insignia",
+				"name": "Sergeant's Insignia",
 				"count": 9
 			}
 		],
@@ -95,7 +95,7 @@
 				"count": 45000
 			},
 			{
-				"name": "Boreal Wolf"s Broken Fang",
+				"name": "Boreal Wolf's Broken Fang",
 				"count": 5
 			},
 			{
@@ -103,7 +103,7 @@
 				"count": 18
 			},
 			{
-				"name": "Sergeant"s Insignia",
+				"name": "Sergeant's Insignia",
 				"count": 14
 			}
 		],
@@ -113,7 +113,7 @@
 				"count": 55000
 			},
 			{
-				"name": "Boreal Wolf"s Broken Fang",
+				"name": "Boreal Wolf's Broken Fang",
 				"count": 9
 			},
 			{
@@ -121,7 +121,7 @@
 				"count": 14
 			},
 			{
-				"name": "Lieutenant"s Insignia",
+				"name": "Lieutenant's Insignia",
 				"count": 9
 			}
 		],
@@ -131,7 +131,7 @@
 				"count": 65000
 			},
 			{
-				"name": "Boreal Wolf"s Nostalgia",
+				"name": "Boreal Wolf's Nostalgia",
 				"count": 6
 			},
 			{
@@ -139,7 +139,7 @@
 				"count": 27
 			},
 			{
-				"name": "Lieutenant"s Insignia",
+				"name": "Lieutenant's Insignia",
 				"count": 18
 			}
 		]

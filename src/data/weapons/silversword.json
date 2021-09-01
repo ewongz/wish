@@ -1,6 +1,6 @@
 {
 	"name": "Silver Sword",
-	"description": "A sword for exorcising demons. Everyone knows it"s made of a silver alloy, not pure silver.",
+	"description": "A sword for exorcising demons. Everyone knows it's made of a silver alloy, not pure silver.",
 	"weapontype": "Sword",
 	"rarity": "2",
 	"baseatk": 33,
@@ -21,7 +21,7 @@
 				"count": 5000
 			},
 			{
-				"name": "Tile of Decarabian"s Tower",
+				"name": "Tile of Decarabian's Tower",
 				"count": 1
 			},
 			{
@@ -39,7 +39,7 @@
 				"count": 5000
 			},
 			{
-				"name": "Debris of Decarabian"s City",
+				"name": "Debris of Decarabian's City",
 				"count": 1
 			},
 			{
@@ -57,7 +57,7 @@
 				"count": 10000
 			},
 			{
-				"name": "Debris of Decarabian"s City",
+				"name": "Debris of Decarabian's City",
 				"count": 3
 			},
 			{
@@ -75,7 +75,7 @@
 				"count": 15000
 			},
 			{
-				"name": "Fragment of Decarabian"s Epic",
+				"name": "Fragment of Decarabian's Epic",
 				"count": 1
 			},
 			{

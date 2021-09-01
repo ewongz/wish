@@ -6,7 +6,7 @@
 	"baseatk": 40,
 	"substat": "CRIT DMG",
 	"subvalue": "6.8",
-	"effectname": "Archer"s Message",
+	"effectname": "Archer's Message",
 	"effect": "Charged Attack hits on weak points deal an additional {0} ATK DMG as CRIT DMG. Can only occur once every 10s.",
 	"r1": [
 		"100%"

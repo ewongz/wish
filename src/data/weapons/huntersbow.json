@@ -1,6 +1,6 @@
 {
-	"name": "Hunter"s Bow",
-	"description": "A hunter"s music consists of but two sounds: the twang of the bowstring and the whoosh of soaring arrows.",
+	"name": "Hunter's Bow",
+	"description": "A Hunter's music consists of but two sounds: the twang of the bowstring and the whoosh of soaring arrows.",
 	"weapontype": "Bow",
 	"rarity": "1",
 	"baseatk": 23,
@@ -20,7 +20,7 @@
 				"name": "Mora"
 			},
 			{
-				"name": "Boreal Wolf"s Milk Tooth",
+				"name": "Boreal Wolf's Milk Tooth",
 				"count": 1
 			},
 			{
@@ -38,7 +38,7 @@
 				"count": 5000
 			},
 			{
-				"name": "Boreal Wolf"s Cracked Tooth",
+				"name": "Boreal Wolf's Cracked Tooth",
 				"count": 1
 			},
 			{
@@ -56,7 +56,7 @@
 				"count": 5000
 			},
 			{
-				"name": "Boreal Wolf"s Cracked Tooth",
+				"name": "Boreal Wolf's Cracked Tooth",
 				"count": 2
 			},
 			{
@@ -74,7 +74,7 @@
 				"count": 10000
 			},
 			{
-				"name": "Boreal Wolf"s Broken Fang",
+				"name": "Boreal Wolf's Broken Fang",
 				"count": 1
 			},
 			{

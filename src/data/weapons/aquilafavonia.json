@@ -6,7 +6,7 @@
 	"baseatk": 48,
 	"substat": "Physical DMG Bonus",
 	"subvalue": "9",
-	"effectname": "Falcon"s Defiance",
+	"effectname": "Falcon's Defiance",
 	"effect": "ATK is increased by {0}. Triggers on taking DMG: the soul of the Falcon of the West awakens, holding the banner of resistance aloft, regenerating HP equal to {1} of ATK and dealing {2} of ATK as DMG to surrounding opponents. This effect can only occur once every 15s.",
 	"r1": [
 		"20%",
@@ -41,7 +41,7 @@
 				"count": 10000
 			},
 			{
-				"name": "Tile of Decarabian"s Tower",
+				"name": "Tile of Decarabian's Tower",
 				"count": 5
 			},
 			{
@@ -59,7 +59,7 @@
 				"count": 20000
 			},
 			{
-				"name": "Debris of Decarabian"s City",
+				"name": "Debris of Decarabian's City",
 				"count": 5
 			},
 			{
@@ -77,7 +77,7 @@
 				"count": 30000
 			},
 			{
-				"name": "Debris of Decarabian"s City",
+				"name": "Debris of Decarabian's City",
 				"count": 9
 			},
 			{
@@ -95,7 +95,7 @@
 				"count": 45000
 			},
 			{
-				"name": "Fragment of Decarabian"s Epic",
+				"name": "Fragment of Decarabian's Epic",
 				"count": 5
 			},
 			{
@@ -113,7 +113,7 @@
 				"count": 55000
 			},
 			{
-				"name": "Fragment of Decarabian"s Epic",
+				"name": "Fragment of Decarabian's Epic",
 				"count": 9
 			},
 			{
@@ -131,7 +131,7 @@
 				"count": 65000
 			},
 			{
-				"name": "Scattered Piece of Decarabian"s Dream",
+				"name": "Scattered Piece of Decarabian's Dream",
 				"count": 6
 			},
 			{

@@ -1,7 +1,7 @@
 {
 	"name": "Bennett",
 	"title": "Trial by Fire",
-	"description": "A good-natured adventurer from Mondstadt who"s unfortunately extremely unlucky.",
+	"description": "A good-natured adventurer from Mondstadt who's unfortunately extremely unlucky.",
 	"rarity": "4",
 	"element": "Pyro",
 	"weapontype": "Sword",
@@ -10,7 +10,7 @@
 	"body": "BOY",
 	"association": "MONDSTADT",
 	"region": "Mondstadt",
-	"affiliation": "Adventurers" Guild",
+	"affiliation": "Adventurers' Guild",
 	"birthdaymmdd": "2/29",
 	"birthday": "February 29",
 	"constellation": "Rota Calamitas",

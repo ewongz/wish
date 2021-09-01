@@ -6,7 +6,7 @@
 	"baseatk": 49,
 	"substat": "Physical DMG Bonus",
 	"subvalue": "4.5",
-	"effectname": "Rebel"s Banner-Hymn",
+	"effectname": "Rebel's Banner-Hymn",
 	"effect": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases ATK by {0}, and when Normal or Charged Attacks hit opponents, the character gains a Sigil of Whispers. This effect can be triggered once every 0.3s. When you possess 4 Sigils of Whispers, all of them will be consumed and all nearby party members will obtain the \"Millennial Movement: Banner-Hymn\" effect for 12s. \"Millennial Movement: Banner-Hymn\" increases Normal ATK SPD by {1} and increases ATK by {2}. Once this effect is triggered, you will not gain Sigils of Whispers for 20s. Of the many effects of the \"Millennial Movement,\" buffs of the same type will not stack.",
 	"r1": [
 		"16%",
@@ -41,7 +41,7 @@
 				"count": 10000
 			},
 			{
-				"name": "Tile of Decarabian"s Tower",
+				"name": "Tile of Decarabian's Tower",
 				"count": 5
 			},
 			{
@@ -59,7 +59,7 @@
 				"count": 20000
 			},
 			{
-				"name": "Debris of Decarabian"s City",
+				"name": "Debris of Decarabian's City",
 				"count": 5
 			},
 			{
@@ -77,7 +77,7 @@
 				"count": 30000
 			},
 			{
-				"name": "Debris of Decarabian"s City",
+				"name": "Debris of Decarabian's City",
 				"count": 9
 			},
 			{
@@ -95,7 +95,7 @@
 				"count": 45000
 			},
 			{
-				"name": "Fragment of Decarabian"s Epic",
+				"name": "Fragment of Decarabian's Epic",
 				"count": 5
 			},
 			{
@@ -113,7 +113,7 @@
 				"count": 55000
 			},
 			{
-				"name": "Fragment of Decarabian"s Epic",
+				"name": "Fragment of Decarabian's Epic",
 				"count": 9
 			},
 			{
@@ -131,7 +131,7 @@
 				"count": 65000
 			},
 			{
-				"name": "Scattered Piece of Decarabian"s Dream",
+				"name": "Scattered Piece of Decarabian's Dream",
 				"count": 6
 			},
 			{

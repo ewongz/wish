@@ -6,8 +6,8 @@
 	"baseatk": 44,
 	"substat": "CRIT Rate",
 	"subvalue": "9.6",
-	"effectname": "Protector"s Virtue",
-	"effect": "HP increased by {0}. Additionally, provides an ATK Bonus based on {1} of the wielder"s Max HP.",
+	"effectname": "Protector's Virtue",
+	"effect": "HP increased by {0}. Additionally, provides an ATK Bonus based on {1} of the wielder's Max HP.",
 	"r1": [
 		"20%",
 		"1.2%"

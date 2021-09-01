@@ -1,7 +1,7 @@
 {
 	"name": "Rosaria",
 	"title": "Thorny Benevolence",
-	"description": "A sister of the church, though you wouldn"t know it if it weren"t for her attire. Known for her sharp, cold words and manner, she often works alone.",
+	"description": "A sister of the church, though you wouldn't know it if it weren't for her attire. Known for her sharp, cold words and manner, she often works alone.",
 	"rarity": "4",
 	"element": "Cryo",
 	"weapontype": "Polearm",
@@ -35,7 +35,7 @@
 				"count": 3
 			},
 			{
-				"name": "Recruit"s Insignia",
+				"name": "Recruit's Insignia",
 				"count": 3
 			}
 		],
@@ -57,7 +57,7 @@
 				"count": 10
 			},
 			{
-				"name": "Recruit"s Insignia",
+				"name": "Recruit's Insignia",
 				"count": 15
 			}
 		],
@@ -79,7 +79,7 @@
 				"count": 20
 			},
 			{
-				"name": "Sergeant"s Insignia",
+				"name": "Sergeant's Insignia",
 				"count": 12
 			}
 		],
@@ -101,7 +101,7 @@
 				"count": 30
 			},
 			{
-				"name": "Sergeant"s Insignia",
+				"name": "Sergeant's Insignia",
 				"count": 18
 			}
 		],
@@ -123,7 +123,7 @@
 				"count": 45
 			},
 			{
-				"name": "Lieutenant"s Insignia",
+				"name": "Lieutenant's Insignia",
 				"count": 12
 			}
 		],
@@ -145,7 +145,7 @@
 				"count": 60
 			},
 			{
-				"name": "Lieutenant"s Insignia",
+				"name": "Lieutenant's Insignia",
 				"count": 24
 			}
 		]
