@@ -11,7 +11,6 @@ class Wish:
     def __init__(self, data_path="data"):
         """
         Simulates wishes in Genshin Impact
-        TODO: add cost calculator
         """
         self.four_star_pity_counter = 0
         self.five_star_pity_counter = 0
@@ -24,6 +23,7 @@ class Wish:
                                            4: 0.051,
                                            5: 0.006}
         self.item_probabilities = copy.deepcopy(self.default_item_probabilities)
+        self.first_five_star_roll = None
             
     def get_roll_summary(self, roll_counts):
         summary = {}
@@ -84,7 +84,7 @@ class Wish:
             rarity = 4
         return rarity
     
-    def roll(self, n=1):
+    def roll(self, n=1, print_summary=True):
         """
         Use pity rules and probabilities for getting 3/4/5 star item rarity.
         Based on the item rarity returned, sample from an item pool containing
@@ -107,13 +107,15 @@ class Wish:
                 self.four_star_pity_counter = 0
                 self.five_star_pity_counter += 1
             else:
+                if not self.first_five_star_roll:
+                    self.first_five_star_roll = i
                 # Does 4 star pity counter reset if 5 star pity resets? Assume that it doesn't.
                 self.five_star_pity_counter = 0
                 # Reset the soft-pity affected probability distribution for 3/4/5 star item rarities
                 self.item_probabilities = copy.deepcopy(self.default_item_probabilities)
-        self.print_summary_stats(roll_counts)
-        return items
-    
+        if print_summary:
+            self.print_summary_stats(roll_counts)
+        return items   
 
     def print_summary_stats(self, roll_counts):
         print(self.get_roll_summary(roll_counts))
@@ -124,10 +126,40 @@ class Wish:
         cumulative_rolls = sum(self.cumulative_roll_counts.values())
         print("cumulative rolls: {}".format(cumulative_rolls))
         print("primogems: {}".format(160 * cumulative_rolls))
+        print("${}".format(self.cost_calculator(160 * cumulative_rolls)))
         print("4 star pity count: {}".format(self.four_star_pity_counter))
         print("5 star pity count: {}".format(self.five_star_pity_counter))
 
-    
+    def cost_calculator(self, gems):
+        """
+        returns the minimum amount in USD required to purchase the number of gems
+        """
+        usd_to_gem_conversion = {1: 60,
+                                5: 300,
+                                15: 980,
+                                30: 1980,
+                                50: 3280,
+                                100: 6480}
+        total = 0
+        cost = defaultdict(int)
+        for usd, gem in sorted(usd_to_gem_conversion.items(), reverse=True):
+            if gems < gem and gem != 60:
+                continue
+            else:
+                n_bills = gems//gem
+                cost[usd] += n_bills
+                if gem == 60:
+                    remainder = gems % gem
+                    if remainder:
+                        cost[usd] += 1
+                else:
+                    gems =  gems - (gem * n_bills)
+        for denomination, amount in cost.items():
+            dollar_amount = denomination * amount
+            total += dollar_amount
+        return total
+
+
 class StandardBanner(Wish):
     """
     Rolls for these wishes pull from Wanderlust Invocation banner item pool
@@ -151,7 +183,6 @@ class WeaponBanner(Wish):
     """
     Rolls for these wishes pull from Weapon banner item pool. 
     There are weapon-banner specific rules.
-    TODO: implement apply_pity to overwrite base class apply_pity for adjusted hard/soft pity thresholds
     TODO: adjust item pool to match Weapon banner
     TODO: implement Epitomized Path functionality
     """
@@ -171,7 +202,6 @@ class CharacterBanner(Wish):
         self.version = 2.1
         super().__init__(**kwargs)
         
-
     def get_item_list(self, rarity):
         """
         generates the character and weapons pool to pull from for
